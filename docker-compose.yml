@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  gopher:
+    image: joshkaiju/gophernicus
+    container_name: gopher.realja.me
+    volumes:
+      - ./src:/var/gopher:rw
+    ports:
+      - 70:70
+    restart: always
